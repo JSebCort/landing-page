@@ -2,9 +2,15 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 ul{
     list-style: none;
 }
+
 button{
     background:#3882F6;
     color:#F9FAF8;
@@ -15,33 +21,41 @@ button{
 }
 
 /* HEADER */
-
 .header{
     color:#E5E7EB;
     background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .top-header{
+    padding:20px;
     display:flex;
     justify-content: space-between;
-    padding:20px;
+    min-width: 1200px;
 }
 
 .logo{
     font-size: 24px;
     color:#F9FAF8;
+    display: flex;
     align-self: center;
+    justify-self: start;
 }
 
 .header-links{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap:24px;
 }
 
 .bottom-header{
     display:flex;
-    padding:20px;
+    padding:50px;
+    justify-content: space-between;
+    min-width:1200px;
+    align-items: center;
 }
 
 .maintext, .subtext, .button-one{
@@ -60,25 +74,76 @@ button{
 }
 
 .image{
-    display: flex;
-    width:100%;
-    height:auto;
-    justify-content: center;
-    align-self: center;
+    display:flex;
+    
+}
+.hero{
+    max-width: 700px;
 }
 
+
 /* INFO */
+
+.info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:50px;
+}
+
+.title{
+    text-align: center;
+    font-size:36px;
+    color:#1F2937;
+    font-weight:bold;
+    padding: 10px;
+}
+
+.info-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 1200px;
+}
+
+.info-img{
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 8px;
+}
+
+.info-img img{
+    display: block;
+    border-radius: 5px;
+}
+
+.info-text{
+    max-width:212px;
+    text-align: center;
+}
+
+.stats-container{
+    display:flex;
+    gap:50px;
+    
+}
 
 /* QUOTE */
 
 .quote{
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    padding:50px;
 }
+
 .quote-text{
     display:flex;
     flex-direction: column;
-    
+    max-width: 1200px;
 }
+
 .quote-main{
     display:flex;
     justify-content:start;
@@ -87,6 +152,7 @@ button{
     color:#1F2937;
     font-style:italic;
 }
+
 .quote-author{
     display:flex;
     justify-content: end;
@@ -94,6 +160,7 @@ button{
     font-size:30px;
     color:#1F2937;
     font-weight:bold;
+    padding:10px;
 }
 
 /* CALL TO ACTION */
@@ -101,6 +168,8 @@ button{
 .call-to-action{
     background: white;
     padding:30px;
+    display: flex;
+    justify-content: center;
 }
 
 .cta-container{
@@ -110,6 +179,7 @@ button{
     background-color: #3882F6;
     padding:50px 20px;
     border-radius: 5px;
+    min-width: 1200px;
 }
 
 .cta-main,.cta-sub{
@@ -123,8 +193,9 @@ button{
 
 .button-two{
     border-style: solid;
-    border-radius: 3px;
+    border-radius: 8px;
     border-color: #F9FAF8;
+    text-align: center;
 }
 
 /* FOOTER */
@@ -132,4 +203,6 @@ button{
     background-color: #1F2937;
     text-align: center;
     color:#E5E7EB;
+    font-size: 15px;
+    padding:20px;
 }
